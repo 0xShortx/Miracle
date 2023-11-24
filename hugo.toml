@@ -1,0 +1,95 @@
+baseURL = "https://hugo-paper.vercel.app/"
+# title = "Miracle"
+author = "Malte Wagenbach"
+copyright = "Copyright © a Pirate Company"
+paginate = 1
+
+
+
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "paper"
+title = "Miracle"
+
+[params]
+  color = 'linen'
+
+  description = "Investing in a regenerative future." # Add a short description if you like
+  # ... other params ...
+
+  twitter = 'joshwagenbach'
+  substack = 'animamundi'
+
+  name = 'We provide investment to companies and research initiatives dedicated to creating a global economy based on regenerative materials.'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About us"
+    url = "/about/"
+    weight = 7
+
+     [[menu.main]]
+    identifier = "Thesis"
+    name = "Thesis"
+    url = "/thesis/"
+    weight = 8
+
+     [[menu.main]]
+    identifier = "Our Way"
+    name = "Our Way"
+    url = "/ourway/"
+    weight = 9
+  
+   [[menu.main]]
+    identifier = "Apply"
+    name = "Apply"
+    url = "https://tally.so/r/wg90Jd"
+    weight = 11
+
+ 
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+ 
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
